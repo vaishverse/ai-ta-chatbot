@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from aita_chatbot.qa_engine import get_answer_from_query, load_and_index_documents
+from qa_engine import get_answer_from_query, load_and_index_documents
 
 app = Flask(__name__)
 CORS(app)
